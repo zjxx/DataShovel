@@ -94,11 +94,11 @@ const resetColor=()=>{
 <style scoped lang="scss">
 @include b(json){
   border: 1px solid #000;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   flex :0.35;
-  overflow-y: auto;
+  overflow:scroll;
   
   @include e(items){
     border: 1px solid #000;

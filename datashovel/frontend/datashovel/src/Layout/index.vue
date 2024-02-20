@@ -33,17 +33,18 @@ const handlePageClicked = (page) => {
 </script>
 <style lang="scss">
   @include b(box){
-    @include bfc;
-    width:inherit;
+    height:100%;
     display: flex;
     flex-direction: row;
+    border:1px solid #000;
     @include e(left){
       flex:0.2;
- 
       display: flex;
       flex-direction: column;
+      height:100%;
     }
     @include e(right){
+      height: 100%;
       display: flex;
       flex-direction: column;
       @include m(top){

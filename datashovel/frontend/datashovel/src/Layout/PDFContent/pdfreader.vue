@@ -26,7 +26,7 @@ onMounted(async () => {
   });
 });
 
-let scale = 1.02;
+let scale = 0.78;
 async function fetchJsonData(filePath) {
   try {
     const response = await fetch(filePath);
@@ -38,8 +38,8 @@ async function fetchJsonData(filePath) {
             const bbox = entry.bbox[i];
             const [left, top, width, height] = bbox;
             boxesData.value.push({
-              left: left / 2.08 * scale+180,
-              top: top / 2.08 * scale+105,
+              left: left / 2.08 * scale+230,
+              top: top / 2.08 * scale+100,
               width: width / 2.08 * scale,
               height: height / 2.08 * scale,
               page: entry.pageNum,
@@ -82,6 +82,7 @@ watch(() => props.pageNumber, (newValue, oldValue) => {
   border: 1px solid #000;
   flex :0.35;
   overflow: hidden;
+  height: 100%;
 }
 
 .box {

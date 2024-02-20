@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <div class="DS-Config">2333</div>
+  <div class="DS-config">2333</div>
 </template>
 
 <style scoped lang="scss">
 @include b(config){
-  border-right: 1px solid #000;
+  border-right: 1px solid #942323;
   min-height: 100px;
   flex:0.3;
   width: 100%;
